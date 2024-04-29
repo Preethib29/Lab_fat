@@ -23,7 +23,3 @@ jobs:
 
 
       - name: Test  # Run automated tests to validate code changes
-
-
-      - name: Deploy  # Deploy the built artifacts to a target environment
-        ...
