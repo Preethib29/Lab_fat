@@ -1,0 +1,29 @@
+name: CI/CD Pipeline  
+
+on:
+  push:
+    branches:
+      - main  # Trigger events for code pushes to the main branch
+  pull_request:
+    branches:
+      - main  # Trigger events for pull requests targeting the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Operating system for job execution
+
+    steps:
+      - name: Checkout code  # Checkout the code from the repository
+        uses: actions/checkout@v2
+
+      - name: Setup environment  # Set up the execution environment (e.g., install dependencies)
+
+
+      - name: Build  # Compile the code and generate artifacts
+
+
+      - name: Test  # Run automated tests to validate code changes
+
+
+      - name: Deploy  # Deploy the built artifacts to a target environment
+        ...
